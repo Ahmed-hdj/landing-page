@@ -1,0 +1,559 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body>div {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 79px;
+    background-image: url(images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 151px;
+    width: 92%;
+
+
+}
+
+.bit,
+header,
+input[type="submit"],
+.bit2,
+.bit2 div div p,
+.bit3 p:first-child,
+.bit4 {
+    font-family: "Raleway";
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+ul {
+    list-style: none;
+}
+
+.bit {
+    display: flex;
+    flex-flow: column wrap;
+    height: 446px;
+    justify-content: center;
+    row-gap: 19px;
+    width: 92%;
+    align-content: space-between;
+
+    margin-top: 60px;
+    margin-bottom: 367px;
+}
+
+.bit p:first-child {
+    width: 578px;
+    line-height: 51px;
+
+}
+
+.bit p:last-of-type {
+    width: 510px;
+    font-family: "open sans";
+}
+
+input,
+input [type="submit"],
+.bit2>div {
+    border-radius: 3px;
+}
+
+input {
+    padding: 12px 14px 6px;
+    width: 280px;
+    margin-right: 15px;
+    border: 1px solid;
+    outline: none;
+
+}
+
+input[type="submit"] {
+    width: 177px;
+    height: 35px;
+    color: white;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    font-weight: 700;
+    position: absolute;
+    box-shadow: 2px 2px 5px 0px #00000030;
+    cursor: pointer;
+}
+
+.bit div:last-child {
+    position: relative;
+}
+
+.bit img {
+    width: 566px;
+    margin-top: 27px;
+}
+
+.bit p:first-child,
+.bit2>p:first-child {
+    font-size: 35.5px;
+    font-weight: 700;
+    color: hsl(243, 87%, 12%);
+}
+
+.bit2>p:not(p:first-child),
+.bit2 div p:first-child {
+    font-family: "open sans";
+}
+
+.bit2>p:not(p:first-child),
+u {
+    width: 520px;
+}
+
+.bit2>p:first-child {
+    font-size: 40.7px
+}
+
+.bit2>p:last-of-type {
+    color: hsl(170, 45%, 43%);
+    position: relative;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    height: 27px;
+    margin-bottom: 27px;
+    cursor: pointer;
+}
+
+.bit2>p:last-of-type img {
+    position: absolute;
+    bottom: 3px;
+    width: 16px;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    padding-bottom: 3px;
+}
+
+span {
+    display: inline-block;
+}
+
+
+.bit2>div {
+    width: 347px;
+    height: 214px;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px #00000052;
+}
+
+.bit2 div div img {
+    border-radius: 50%;
+    width: 38px;
+    vertical-align: sub;
+
+}
+
+img[alt="quote"] {
+    width: 12px;
+    height: 13px;
+
+}
+
+img[alt="quote"]+p {
+    width: 300px;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.bit2 div div span {
+    font-size: 11px;
+    color: hsl(0, 0%, 75%);
+    font-weight: 400;
+
+}
+
+.bit2 div div p {
+    font-weight: 700;
+    display: inline-block;
+    width: 185px;
+    font-size: 14px;
+    color: hsl(243, 87%, 12%);
+}
+
+.bit2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    height: 525px;
+    position: relative;
+}
+
+.bit2>img:last-child {
+    width: 530px;
+
+    margin-top: -62px;
+}
+
+.bit3 p:first-child {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 19px;
+}
+
+.bit3 p:last-of-type {
+    font-family: "open sans";
+    width: 500px;
+}
+
+.bit3 {
+    background-color: hsl(238, 22%, 44%);
+    height: 275px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: hsl(240, 75%, 98%);
+    margin-top: 60px;
+}
+
+.bit3>div {
+    width: 92%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 122px;
+}
+
+.bit3 input[type=email] {
+    margin-bottom: 14px;
+    height: 49px;
+    width: 479px;
+    padding: 23px;
+    box-shadow: 0px 4px 9px 0px #0a0a0a3d;
+
+}
+
+.bit form p,
+.bit3 form p {
+    display: none;
+}
+
+.bit form input:invalid+input+p {
+    display: block;
+    color: red;
+    font-size: 13px;
+}
+
+input:invalid {
+    border-color: red;
+
+}
+
+.bit3 input[type=submit] {
+    height: 49px;
+    position: unset;
+}
+
+.bit3 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.bit3 form p {
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+
+.bit3 input:invalid+p {
+    display: block;
+}
+
+
+
+
+.bit3 input:invalid {
+    margin-bottom: 0px;
+}
+
+
+
+.bit4 {
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+.bit4>div {
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+    height: 188px;
+    flex-wrap: wrap;
+    margin-left: 64px;
+}
+
+.bit4 ul:last-child li {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 50%;
+    border: solid 1px hsl(240, 75%, 98%);
+}
+
+.bit4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bit4 img {
+    margin-right: 13px;
+}
+
+.bit4 ul:last-child {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 67px;
+}
+
+.bit4 ul:nth-child(3) {
+    align-self: center;
+    margin-top: 31px;
+}
+
+.bit4 ul:first-child+ul {
+    align-self: flex-end;
+}
+
+.bit4 li {
+    cursor: pointer;
+}
+
+input[type=submit]:hover,
+.bit2>p:last-of-type:hover {
+    opacity: 0.7;
+
+}
+
+.bit4 li:hover {
+    color: hsl(224, 93%, 58%);
+}
+
+.bit4 ul:last-child li:hover {
+    border-color: hsl(224, 93%, 58%);
+}
+
+
+
+
+
+
+
+@media (min-width:1440px) {
+
+
+    body {
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center 79vh;
+        background-size: 4500px 952px;
+
+    }
+}
+
+@media (min-width:375px) and (max-width:1439px) {
+    body {
+        background-image: url(images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center 106vh;
+        background-size: 7000px 9017px;
+
+    }
+
+    .bit3,
+    .bit4 {
+
+        align-content: center;
+    }
+
+    header {
+        background-size: 106px;
+    }
+
+    header ul {
+        font-size: 14px;
+        width: 179px;
+    }
+
+    .bit p:first-child,
+    .bit2>p:first-child,
+    .bit>p:last-of-type,
+    .bit3 div p {
+        text-align: center;
+    }
+
+    .bit {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .bit p:first-child {
+        font-size: 26px;
+        width: 100%;
+    }
+
+    .bit p:last-of-type {
+        width: 100%;
+    }
+
+    .bit form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+
+
+    input[type="submit"] {
+        position: unset;
+        order: 1;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .bit img {
+        width: 100%;
+        order: -1;
+    }
+
+    .bit2 {
+        height: auto;
+        gap: 27px;
+        width: 92%;
+    }
+
+    .bit2>p:first-child {
+        font-size: 19px;
+    }
+
+    .bit2>p:first-child+p,
+    .bit2>p:nth-child(3) {
+        font-size: 14.5px;
+    }
+
+    .bit2>p:not(p:first-child) {
+        width: 100%;
+
+    }
+
+    .bit2>div {
+        width: 322px;
+        align-self: center;
+    }
+
+    img[alt="quote"]+p {
+        width: 310px;
+        font-size: 14px;
+    }
+
+    .bit2>img:last-child {
+        width: 100%;
+        margin-top: unset;
+        order: -1;
+    }
+
+    .bit2>p:last-of-type {
+        text-align: center;
+    }
+
+    .bit3,
+    .bit4 {
+        height: auto;
+        flex-direction: column;
+
+    }
+
+    .bit4 {
+        height: 550px;
+    }
+
+    .bit3 {
+        height: 450px;
+    }
+
+    .bit3>div {
+        height: auto;
+    }
+
+    .bit3 div p:first-child {
+        font-size: 24px;
+    }
+
+    .bit3 div p:last-of-type {
+        width: 99%;
+        margin-bottom: 19px;
+    }
+
+    .bit3 input[type="email"] {
+        width: 100%;
+    }
+
+    .bit4>div {
+        width: 92%;
+        height: auto;
+        flex-direction: column;
+        margin-left: unset;
+        gap: 42px;
+    }
+
+    .bit4 ul:first-child+ul {
+        align-self: unset;
+
+    }
+
+    .bit4 ul:nth-child(3) {
+        align-self: unset;
+        margin-top: unset;
+    }
+
+    .bit4 ul:last-child {
+        margin-top: unset;
+        align-self: center;
+    }
+
+    .bit4 li {
+        width: fit-content;
+    }
+
+
+}
